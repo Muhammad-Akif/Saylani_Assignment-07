@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- <a href="#" onclick="fun()">Click</a> -->
+    <!-- <input type="button" value="Click" onclick="alert('akif')"> -->
+    <!-- <img onmouseover="console.log('Hover')" onmouseout="console.log('Down')" src="https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="car" height="100px" width="150px"> -->
+    <!-- Email:<br> <input type="text" size="30" onFocus="this.style.backgroundColor='yellow'" onBlur="this.style.backgroundColor='white'"> -->
+    <!-- <form >  
+        Email:  <input type="text" id="email">  
+        <input type="submit" value="Submit"> 
+    </form> -->
+    <!-- <form> 
+        ZIP:
+          <input type="text" onblur="filled()" id="zip"><br> 
+        City:  
+          <input type="text" id="city">
+    </form> -->
+
+    <div class="heading">
+        <h1>Calculator</h1>
+    </div>
+    <div>
+        <div calbody>
+            <input type="text" style="font-weight: bold;" id="view">
+        </div>
+        <div>
+            <table >
+                <tr>
+                    <td><button id="inputEnter" onclick="display('%')">%</button></td>
+                    <td><button id="inputEnter" onclick="display('/')">/</button></td>
+                    <td><button onclick="clr()">C</button></td>
+                    <td><button onclick="bck()" id="bt"><img src="back.png" alt="*" height="18px" width="18px"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="inputEnter" onclick="display('7')">7</button></td>
+                    <td><button id="inputEnter" onclick="display('8')">8</button></td>
+                    <td><button id="inputEnter" onclick="display('9')">9</button></td>
+                    <td><button id="inputEnter" onclick="display('*')">X</button></td>
+                </tr>
+                <tr>
+                    <td><button id="inputEnter" onclick="display('4')">4</button></td>
+                    <td><button id="inputEnter" onclick="display('5')">5</button></td>
+                    <td><button id="inputEnter" onclick="display('6')">6</button></td>
+                    <td><button id="inputEnter" onclick="display('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button id="inputEnter" onclick="display('1')">1</button></td>
+                    <td><button id="inputEnter" onclick="display('2')">2</button></td>
+                    <td><button id="inputEnter" onclick="display('3')">3</button></td>
+                    <td><button id="inputEnter" onclick="display('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button id="inputEnter" onclick="display('0')">0</button></td>
+                    <td><button id="inputEnter" onclick="display('.')">.</button></td>
+                    <td colspan="2"><button onclick="eql()">=</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+<script src="app.js"></script>
+
+</html>
